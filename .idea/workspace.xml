@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5655bbba-738f-45d2-ab52-a96fae419f12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Modules/Customer/Resources/views/layouts/includes/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Customer/Resources/views/layouts/includes/header-bottom.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Customer/Resources/views/layouts/includes/header-center.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Customer/Resources/views/layouts/includes/header-top.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Customer/Resources/views/layouts/includes/header-mobile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Customer/Resources/views/layouts/includes/header-mobile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Customer/Resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Customer/Resources/views/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Modules/Customer/Resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Customer/Resources/views/layouts/master.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -170,7 +166,8 @@
       <workItem from="1604431716697" duration="1256000" />
       <workItem from="1604436476280" duration="2451000" />
       <workItem from="1604487227760" duration="429000" />
-      <workItem from="1604739996685" duration="5075000" />
+      <workItem from="1604739996685" duration="6113000" />
+      <workItem from="1604747816485" duration="383000" />
     </task>
     <servers />
   </component>
@@ -194,9 +191,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="120" width="585" height="488" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1604741586518" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1604742742888">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1604748360520">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1604742742888" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1604748360520" />
   </component>
 </project>
