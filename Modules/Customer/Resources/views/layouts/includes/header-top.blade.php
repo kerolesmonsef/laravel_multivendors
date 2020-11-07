@@ -18,31 +18,56 @@
                 <div class="col-lg-6 col-md-6 d-flex justify-content-end align-items-center header-top-right">
                     <div class="register-out">
                         <i class="zmdi zmdi-account"></i>
-                        <a class="register" href="http://demo.bestprestashoptheme.com/savemart/ar/تسجيل الدخول?create_account=1" data-link-action="display-register-form">
-                            Register
-                        </a>
-                        <span class="or-text">or</span>
-                        <a class="login" href="http://demo.bestprestashoptheme.com/savemart/ar/الحساب الشخصي" rel="nofollow" title="تسجيل الدخول إلى حسابك">Sign in</a>
+                        @guest()
+                            <a class="register" href="{{ route('register') }}" data-link-action="display-register-form">
+                                Register
+                            </a>
+                            <span class="or-text">or</span>
+                            <a class="login" href="{{ route('login') }}" rel="nofollow" title="تسجيل الدخول إلى حسابك">
+                                Sign in
+                            </a>
+                        @endguest
+
+                        @auth
+                            <a class="login" href="{{ route('login') }}" rel="nofollow" title="تسجيل الدخول إلى حسابك"
+                               onclick="event.preventDefault();document.getElementById('logout-form').submit();"
+                            >
+                                {{ __('Logout') }}
+                            </a>
+
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
+                        @endauth
+
+
+
                     </div>
 
                     <!-- begin module:ps_currencyselector/ps_currencyselector.tpl -->
-                    <!-- begin /var/www/demo.bestprestashoptheme.com/public_html/savemart/themes/vinova_savemart/modules/ps_currencyselector/ps_currencyselector.tpl --><div id="_desktop_currency_selector" class="currency-selector groups-selector hidden-sm-down currentcy-selector-dropdown">
-                        <div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="main">
+                    <!-- begin /var/www/demo.bestprestashoptheme.com/public_html/savemart/themes/vinova_savemart/modules/ps_currencyselector/ps_currencyselector.tpl -->
+                    <div id="_desktop_currency_selector"
+                         class="currency-selector groups-selector hidden-sm-down currentcy-selector-dropdown">
+                        <div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                             role="main">
                             <span class="expand-more">GBP</span>
                         </div>
                         <div class="currency-list dropdown-menu">
                             <div class="currency-list-content text-left">
                                 <div class="currency-item current flex-first">
-                                    <a title="جنيه إسترليني" rel="nofollow" href="http://demo.bestprestashoptheme.com/savemart/ar/?home=home_3&amp;SubmitCurrency=1&amp;id_currency=1">UK£ GBP</a>
+                                    <a title="جنيه إسترليني" rel="nofollow"
+                                       href="http://demo.bestprestashoptheme.com/savemart/ar/?home=home_3&amp;SubmitCurrency=1&amp;id_currency=1">UK£
+                                        GBP</a>
                                 </div>
                                 <div class="currency-item">
-                                    <a title="دولار أمريكي" rel="nofollow" href="http://demo.bestprestashoptheme.com/savemart/ar/?home=home_3&amp;SubmitCurrency=1&amp;id_currency=2">US$ USD</a>
+                                    <a title="دولار أمريكي" rel="nofollow"
+                                       href="http://demo.bestprestashoptheme.com/savemart/ar/?home=home_3&amp;SubmitCurrency=1&amp;id_currency=2">US$
+                                        USD</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
 
 
                     <!-- end /var/www/demo.bestprestashoptheme.com/public_html/savemart/themes/vinova_savemart/modules/ps_currencyselector/ps_currencyselector.tpl -->

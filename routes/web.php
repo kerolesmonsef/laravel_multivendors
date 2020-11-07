@@ -1,4 +1,5 @@
 <?php
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -11,19 +12,29 @@
 |
 */
 
-Route::get('/', function () {
-    return view('dashboard');
+use App\Http\Controllers\HomeController;
+
+Route::get('/', [HomeController::class, "index"]);
+
+Route::group(['prefix' => 'email'], function () {
+    Route::get('inbox', function () {
+        return view('pages.email.inbox');
+    });
+    Route::get('read', function () {
+        return view('pages.email.read');
+    });
+    Route::get('compose', function () {
+        return view('pages.email.compose');
+    });
 });
 
-Route::group(['prefix' => 'email'], function(){
-    Route::get('inbox', function () { return view('pages.email.inbox'); });
-    Route::get('read', function () { return view('pages.email.read'); });
-    Route::get('compose', function () { return view('pages.email.compose'); });
-});
-
-Route::group(['prefix' => 'apps'], function(){
-    Route::get('chat', function () { return view('pages.apps.chat'); });
-    Route::get('calendar', function () { return view('pages.apps.calendar'); });
+Route::group(['prefix' => 'apps'], function () {
+    Route::get('chat', function () {
+        return view('pages.apps.chat');
+    });
+    Route::get('calendar', function () {
+        return view('pages.apps.calendar');
+    });
 });
 
 Route::group(['prefix' => 'ui-components'], function(){
@@ -103,7 +114,7 @@ Route::group(['prefix' => 'error'], function(){
     Route::get('500', function () { return view('pages.error.500'); });
 });
 
-Route::get('/clear-cache', function() {
+Route::get('/clear-cache', function () {
     Artisan::call('cache:clear');
     return "Cache is cleared";
 });
@@ -112,3 +123,7 @@ Route::get('/clear-cache', function() {
 //Route::any('/{page?}',function(){
 //    return View::make('pages.error.404');
 //})->where('page','.*');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -37126,4 +37126,3 @@ module.exports = __webpack_require__(/*! E:\projects\laravel_multivendors\resour
 /***/ })
 
 /******/ });
-//# sourceMappingURL=app.js.map

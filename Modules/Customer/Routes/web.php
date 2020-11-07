@@ -1,4 +1,5 @@
 <?php
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -10,7 +11,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', 'CustomerController@index')->name("customer.index");
+Route::prefix('customer')->as('customer.')->group(function() {
 
-Route::prefix('customer')->group(function() {
-    Route::get('/', 'CustomerController@index');
 });
