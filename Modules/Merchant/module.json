@@ -1,0 +1,13 @@
+{
+    "name": "Merchant",
+    "alias": "merchant",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Merchant\\Providers\\MerchantServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

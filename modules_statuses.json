@@ -1,0 +1,6 @@
+{
+    "Admin": true,
+    "Merchant": true,
+    "Blog": true,
+    "Customer": true
+}
