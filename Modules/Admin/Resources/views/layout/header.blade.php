@@ -66,7 +66,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                   <p>Leonardo Payne</p>
                   <p class="sub-text text-muted">2 min ago</p>
-                </div>	
+                </div>
                 <p class="sub-text text-muted">Project status</p>
               </div>
             </a>
@@ -78,7 +78,7 @@
                 <div class="d-flex justify-content-between align-items-center">
                   <p>Carl Henson</p>
                   <p class="sub-text text-muted">30 min ago</p>
-                </div>	
+                </div>
                 <p class="sub-text text-muted">Client meeting</p>
               </div>
             </a>
@@ -88,9 +88,9 @@
               </div>
               <div class="content">
                 <div class="d-flex justify-content-between align-items-center">
-                  <p>Jensen Combs</p>												
+                  <p>Jensen Combs</p>
                   <p class="sub-text text-muted">1 hrs ago</p>
-                </div>	
+                </div>
                 <p class="sub-text text-muted">Project updates</p>
               </div>
             </a>
@@ -213,21 +213,29 @@
               <li class="nav-item">
                 <a href="javascript:;" class="nav-link">
                   <i data-feather="edit"></i>
-                  <span>Edit Profile</span>
+                    <span>Edit Profile</span>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="javascript:;" class="nav-link">
-                  <i data-feather="repeat"></i>
-                  <span>Switch User</span>
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="javascript:;" class="nav-link">
-                  <i data-feather="log-out"></i>
-                  <span>Log Out</span>
-                </a>
-              </li>
+                <li class="nav-item">
+                    <a href="javascript:;" class="nav-link">
+                        <i data-feather="repeat"></i>
+                        <span>Switch User</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a
+                        href="javascript:;" class="nav-link"
+                        onclick="event.preventDefault();document.getElementById('logout-form').submit();"
+                    >
+                        <i data-feather="log-out"></i>
+                        <span>Log Out</span>
+                    </a>
+
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                </li>
             </ul>
           </div>
         </div>

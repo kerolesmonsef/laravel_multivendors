@@ -2,56 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5655bbba-738f-45d2-ab52-a96fae419f12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Modules/Admin/Entities/Admin.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Merchant/Database/Migrations/2020_11_07_121539_create_merchants_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Merchant/Entities/Merchant.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Merchant/Resources/views/dashboard.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Merchant/Resources/views/layout/footer.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Merchant/Resources/views/layout/header.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Merchant/Resources/views/layout/master.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Merchant/Resources/views/layout/master2.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Merchant/Resources/views/layout/sidebar.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Merchant/Resources/views/sample.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/js/components/ExampleComponent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/confirm.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/rtl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/rtl.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Admin/Http/Controllers/AdminLanguageController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Admin/Http/Controllers/AdminLoginController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Admin/Http/Middleware/AdminMiddleware.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Admin/Http/Requests/AdminAddEditLanguageRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Admin/Resources/views/Language/add_edit_language.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Admin/Resources/views/Language/languages.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Modules/Admin/Resources/views/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Language.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/MainCategory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Traits/ActiveColumnScope.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_07_210954_create_languages_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_07_211842_create_main_categories_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layout/alerts.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Database/Migrations/2020_11_07_094408_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Database/Migrations/2020_11_07_115752_create_admins_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Entities/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Customer/Resources/views/layouts/includes/header-top.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Customer/Resources/views/layouts/includes/header-top.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Customer/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Customer/Routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Merchant/Database/Migrations/2020_11_07_094504_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Customer/Database/Migrations/2020_11_07_132429_create_customers_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Merchant/Entities/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Customer/Entities/Customer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Merchant/Http/Controllers/MerchantController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Merchant/Http/Controllers/MerchantController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Merchant/Resources/views/index.blade.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ConfirmPasswordController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Admin/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Admin/Resources/views/layout/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Resources/views/layout/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Admin/Resources/views/layout/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Resources/views/layout/master.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Admin/Resources/views/layout/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Resources/views/layout/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Admin/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/VerificationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,14 +167,14 @@
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\projects\laravel_multivendors\app\Models" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\projects\laravel_multivendors\Modules\Admin\Resources\views" />
       <recent name="E:\projects\laravel_multivendors\resources\views" />
       <recent name="E:\projects\laravel_multivendors\Modules\Merchant\Resources" />
       <recent name="E:\projects\laravel_multivendors\Modules\Customer\Resources\views\layouts\includes" />
-      <recent name="E:\projects\laravel_multivendors\Modules\Admin\Resources\views" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\projects\laravel_multivendors\app\Models" />
     </key>
   </component>
   <component name="RunManager">
@@ -223,6 +199,8 @@
       <workItem from="1604487227760" duration="429000" />
       <workItem from="1604739996685" duration="6113000" />
       <workItem from="1604747816485" duration="11151000" />
+      <workItem from="1604764302677" duration="14734000" />
+      <workItem from="1604906876953" duration="10420000" />
     </task>
     <servers />
   </component>
@@ -237,29 +215,33 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="488" y="50" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1604754306333" />
+    <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604922945123">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1604922945123" />
     <state x="413" y="121" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1604755491538">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="121" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.728@0.0.1366.728" timestamp="1604755491538" />
-    <state x="544" y="125" key="FileChooserDialogImpl" timestamp="1604758592884">
+    <state x="544" y="125" key="FileChooserDialogImpl" timestamp="1604908814622">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="544" y="125" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604758592884" />
-    <state x="352" y="198" key="NewPhpClassDialog" timestamp="1604744699152">
+    <state x="544" y="125" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604908814622" />
+    <state x="352" y="198" key="NewPhpClassDialog" timestamp="1604785042384">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="352" y="198" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1604744699152" />
-    <state x="518" y="295" key="NewPhpFileDialog" timestamp="1604744249582">
+    <state x="352" y="198" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1604785042384" />
+    <state x="518" y="295" key="NewPhpFileDialog" timestamp="1604922750693">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="518" y="295" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1604744249582" />
-    <state x="390" y="120" width="585" height="488" key="find.popup" timestamp="1604756176866">
+    <state x="518" y="295" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1604922750693" />
+    <state x="390" y="120" width="585" height="488" key="find.popup" timestamp="1604785618872">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="390" y="120" width="585" height="488" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1604756176866" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1604762736381">
+    <state x="390" y="120" width="585" height="488" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1604785618872" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1604923063689">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1604762736381" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1604923063689" />
   </component>
 </project>

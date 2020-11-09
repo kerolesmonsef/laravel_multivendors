@@ -5,6 +5,8 @@ namespace App\Models;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
+use Modules\Admin\Entities\Admin;
+use Modules\Merchant\Entities\Merchant;
 
 /**
  * @property string profile_type
@@ -41,5 +43,20 @@ class User extends Authenticatable
     public function profile()
     {
         return $this->morphTo();
+    }
+
+    public function isAdmin()
+    {
+        return $this->profile_type == Admin::class;
+    }
+
+    public function isMerchant()
+    {
+        return $this->profile_type == Merchant::class;
+    }
+
+    public function isCustomer()
+    {
+        return $this->profile_type == Merchant::class;
     }
 }

@@ -4,39 +4,41 @@
   <title>NobleUI Laravel Admin Dashboard Template</title>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <!-- CSRF Token -->
-  <meta name="_token" content="{{ csrf_token() }}">
-  
-  <link rel="shortcut icon" href="{{ asset('/favicon.ico') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- plugin css -->
-  <link href="{{ asset('assets/fonts/feather-font/css/iconfont.css') }}" rel="stylesheet" />
-  <link href="{{ asset('assets/plugins/flag-icon-css/css/flag-icon.min.css') }}" rel="stylesheet" />
-  <link href="{{ asset('assets/plugins/perfect-scrollbar/perfect-scrollbar.css') }}" rel="stylesheet" />
-  <!-- end plugin css -->
+    <!-- CSRF Token -->
+    <meta name="_token" content="{{ csrf_token() }}">
 
-  @stack('plugin-styles')
+    <link rel="shortcut icon" href="{{ asset('/favicon.ico') }}">
 
-  <!-- common css -->
-  <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
-  <!-- end common css -->
+    <!-- plugin css -->
+    <link href="{{ asset('assets/fonts/feather-font/css/iconfont.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('assets/plugins/flag-icon-css/css/flag-icon.min.css') }}" rel="stylesheet"/>
+    <link href="{{ asset('assets/plugins/perfect-scrollbar/perfect-scrollbar.css') }}" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+          crossorigin="anonymous"/>
+    <!-- end plugin css -->
 
-  @stack('style')
+@stack('plugin-styles')
+
+<!-- common css -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet"/>
+    <!-- end common css -->
+
+    @stack('style')
 </head>
 <body data-base-url="{{url('/')}}" class="rtl">
 
   <script src="{{ asset('assets/js/spinner.js') }}"></script>
 
   <div class="main-wrapper" id="app">
-    @include('layout.sidebar')
+      @include('admin::layout.sidebar')
     <div class="page-wrapper">
-      @include('layout.header')
+        @include('admin::layout.header')
       <div class="page-content">
         @yield('content')
       </div>
-      @include('layout.footer')
+        @include('admin::layout.footer')
     </div>
   </div>
 
@@ -44,6 +46,7 @@
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('assets/plugins/feather-icons/feather.min.js') }}"></script>
     <script src="{{ asset('assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
+  @include("layout.alerts")
     <!-- end base js -->
 
     <!-- plugin js -->

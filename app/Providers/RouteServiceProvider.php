@@ -17,6 +17,9 @@ class RouteServiceProvider extends ServiceProvider
     protected $namespace = 'App\Http\Controllers';
 
     public const  HOME = '/';
+    public const  Admin = '/admin';
+    public const  Customer = '/';
+    public const  Merchant = '/merchant';
 
     /**
      * Define your route model bindings, pattern filters, etc.

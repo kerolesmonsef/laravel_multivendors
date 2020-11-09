@@ -49,11 +49,12 @@ class LoginController extends Controller
      */
     protected function authenticated(Request $request, $user)
     {
-        if ($user->profile_type == Customer::class) {
+        if ($user->isCustomer()) {
             return redirect()->route('customer.index');
-        }
-        elseif ($user->profile_type == Admin::class){
+        } elseif ($user->isAdmin()) {
             return redirect()->route('customer.index');
+        } else {
+            return redirect()->route('merchant.index');
         }
     }
 

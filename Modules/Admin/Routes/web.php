@@ -1,16 +1,15 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+use Illuminate\Support\Facades\Route;
+use Modules\Admin\Http\Controllers\AdminLanguageController;
+use Modules\Admin\Http\Controllers\AdminLoginController;
 
-Route::prefix('admin')->group(function() {
-    Route::get('/', 'AdminController@index');
+Route::get('/login', [AdminLoginController::class, 'getLogin'])->name("login")->middleware("guest");
+Route::post('/login', [AdminLoginController::class, 'postLogin'])->name("post.login");
+
+
+Route::middleware('admin')->group(function () {
+    Route::get('/', 'AdminController@index')->name('dashboard');
+    Route::resource('language', "AdminLanguageController")->except('show');
 });
+
