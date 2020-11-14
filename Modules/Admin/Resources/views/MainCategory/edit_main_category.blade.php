@@ -90,8 +90,20 @@
                                                     </div>
                                                 </div>
                                                 <hr>
-<!--                                                --><?php //dd($main_category->languages); ?>
-                                                @foreach($main_category->languages as $lang)
+                                                <?php
+                                                /** @var \App\Models\MainCategory $main_category */
+                                                /** @var \Illuminate\Database\Eloquent\Collection $show_languages */
+                                                $show_languages = $main_category->languages;
+                                                $languages = \App\Models\Language::all();
+                                                $languages->each(function ($lang) use (&$show_languages){
+                                                    $new = $show_languages->where('id',$lang->id)->first();
+                                                    if (is_null($new)){
+                                                        $show_languages[]=$lang;
+                                                    }
+                                                });
+//                                                dd($languages, $show_languages);
+                                                ?>
+                                                @foreach($show_languages as $lang)
                                                     <div class="row">
                                                         <div class="col-md-6">
                                                             <div class="form-group">
@@ -100,7 +112,7 @@
                                                                 <input type="text"
                                                                        class="form-control"
                                                                        name="category[{{$loop->index}}][name]"
-                                                                       value="{{ old("category.$loop->index.name",$lang->pivot->content) }}"
+                                                                       value="{{ old("category.$loop->index.name",$lang->pivot->content ?? "") }}"
                                                                 >
                                                                 @error("category.$loop->index.name")
                                                                 <span class="text-danger">{{ $message }}</span>

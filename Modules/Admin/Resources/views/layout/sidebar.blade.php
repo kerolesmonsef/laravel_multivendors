@@ -76,7 +76,7 @@
                 <a class="nav-link" data-toggle="collapse" href="#uiComponents" role="button"
                    aria-expanded="{{ $merchant_active_class == "active" ? "true" : "" }}"
                    aria-controls="uiComponents">
-                    <i class="link-icon" data-feather="feather"></i>
+                    <i class="fas fa-users" ></i>
                     <span class="link-title">التجار</span>
                     <span class="badge badge-danger">{{ \Modules\Merchant\Entities\Merchant::count() }}</span>
                     <i class="link-arrow" data-feather="chevron-down"></i>

@@ -1,0 +1,9 @@
+@if($id==1)
+    Merchant
+@elseif($id==2)
+    Client
+@elseif($id==3)
+    Admin
+@else
+    Unknown
+@endif

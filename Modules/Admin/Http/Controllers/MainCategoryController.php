@@ -92,8 +92,13 @@ class MainCategoryController extends Controller
             'photo' => $photo,
         ]);
 
+        $existed_languages = $main_category->languages;
         foreach ($request->input('category') as $cat_i) {
-            $main_category->languages()->updateExistingPivot($cat_i['language_id'], ['content' => $cat_i['name']]);
+            if ($existed_languages->contains($cat_i['language_id'])) {
+                $main_category->languages()->updateExistingPivot($cat_i['language_id'], ['content' => $cat_i['name']]);
+            } else {
+                $main_category->languages()->attach($cat_i['language_id'], ['content' => $cat_i['name']]);
+            }
         }
         return redirect()->back()->with('s_alert_success', 'Cat Added Successfully');
     }

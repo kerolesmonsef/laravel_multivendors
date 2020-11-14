@@ -18,7 +18,6 @@ class AddFieldsToMerchantsTable extends Migration
             $table->float("latitude")->nullable()->default(null);
             $table->float("longitude")->nullable()->default(null);
             $table->unsignedBigInteger("category_id");
-            $table->enum("active", ['yes', 'no'])->default("yes");
             $table->string("logo", 255)->nullable()->default(null);
             $table->timestamps();
         });

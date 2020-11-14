@@ -15,7 +15,7 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->morphs('profile');
+            $table->enum("active", ['yes', 'no'])->default("yes");
 
             $table->string("profile_type")->nullable()->default(null);
             $table->unsignedBigInteger("profile_id")->nullable()->default(null);

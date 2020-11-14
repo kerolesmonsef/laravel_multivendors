@@ -10,6 +10,7 @@ use Modules\Merchant\Entities\Merchant;
 
 /**
  * @property string profile_type
+ * @property string password
  */
 class User extends Authenticatable
 {
@@ -48,6 +49,13 @@ class User extends Authenticatable
     public function isAdmin()
     {
         return $this->profile_type == Admin::class;
+    }
+
+    public function main_categories()
+    {
+        return MainCategory::query()->with(['languages' => function ($query) {
+            $query->where("languages.short_cut", '=', get_default_lang());
+        }])->get();
     }
 
     public function isMerchant()

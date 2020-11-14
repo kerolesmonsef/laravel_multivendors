@@ -19,7 +19,7 @@
           crossorigin="anonymous"/>
     <!-- end plugin css -->
 
-@stack('plugin-styles')
+    @stack('plugin-styles')
 
 <!-- common css -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet"/>

@@ -65,7 +65,7 @@ if ($language->exists) {
                                                 <div class="row">
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label for="projectinput1"> اسم اللغة </label>
+                                                            <label > اسم اللغة </label>
                                                             <input type="text" value="{{ old("name",$language->name) }}"
                                                                    class="form-control"
                                                                    placeholder="ادخل اسم اللغة  "
@@ -78,7 +78,7 @@ if ($language->exists) {
 
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label for="projectinput1"> الاختصار </label>
+                                                            <label > الاختصار </label>
                                                             <input type="text"
                                                                    value="{{ old("short_cut",$language->short_cut) }}"
                                                                    class="form-control"
@@ -96,7 +96,7 @@ if ($language->exists) {
 
                                                     <div class="col-md-6">
                                                         <div class="form-group">
-                                                            <label for="projectinput2"> الاتجاة </label>
+                                                            <label > الاتجاة </label>
                                                             <select name="direction" class="select2 form-control">
                                                                 <optgroup label="من فضلك أختر اتجاه اللغة ">
                                                                     <option value="rtl">من اليمين الي اليسار
@@ -117,10 +117,10 @@ if ($language->exists) {
                                                     <div class="col-md-6">
                                                         <div class="form-group mt-1">
                                                             <input type="checkbox" name="active"
-                                                                   id="switcheryColor4"
+
                                                                    class="switchery" data-color="success"
                                                                 {{ old('active',$language->active) == 'yes' ? "checked" : '' }}/>
-                                                            <label for="switcheryColor4"
+                                                            <label
                                                                    class="card-title ml-1">الحالة </label>
                                                         </div>
                                                     </div>
