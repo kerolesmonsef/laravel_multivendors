@@ -66,18 +66,18 @@
                                                     <td>
                                                         <div class="btn-group" role="group"
                                                              aria-label="Basic example">
-                                                            <a href=""
+                                                            <a href="{{ route('admin.language.edit',['language'=>$language->id]) }}"
                                                                class="btn btn-outline-primary btn-min-width box-shadow-3 mr-1 mb-1">تعديل</a>
-
-                                                            <button type="button"
-                                                                    value=""
-                                                                    onclick=""
-                                                                    class="btn btn-danger btn-min-width box-shadow-3 mr-1 mb-1"
-                                                                    data-toggle="modal"
-                                                                    data-target="#rotateInUpRight">
-                                                                حذف
-                                                            </button>
-
+                                                            <form method="post" action="{{ route('admin.language.update',['language'=>$language->id]) }}">
+                                                                @csrf
+                                                                @method("delete")
+                                                                <button type="submit"
+                                                                        class="btn btn-danger btn-min-width box-shadow-3 mr-1 mb-1"
+                                                                        data-toggle="modal"
+                                                                        data-target="#rotateInUpRight">
+                                                                    حذف
+                                                                </button>
+                                                            </form>
                                                         </div>
                                                     </td>
                                                 </tr>

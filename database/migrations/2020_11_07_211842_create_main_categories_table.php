@@ -15,16 +15,11 @@ class CreateMainCategoriesTable extends Migration
     {
         Schema::create('main_categories', function (Blueprint $table) {
             $table->id();
-            $table->tinyInteger("translation_id")->unsigned();
-            $table->unsignedTinyInteger("translation_of");
-            $table->string("name")->nullable()->default(null);
             $table->string("slug")->nullable()->default(null);
             $table->string("photo")->nullable()->default(null);
             $table->enum("active", ["yes", "no"])->default('yes');
             $table->timestamps();
 
-            $table->foreign("translation_id")->references("id")->on("languages")
-                ->onDelete("cascade")->onUpdate("cascade");
         });
     }
 

@@ -1,49 +1,59 @@
 <nav class="navbar">
   <a href="#" class="sidebar-toggler">
-    <i data-feather="menu"></i>
+      <i data-feather="menu"></i>
   </a>
-  <div class="navbar-content">
-    <form class="search-form">
-      <div class="input-group">
-        <div class="input-group-prepend">
-          <div class="input-group-text">
-            <i data-feather="search"></i>
-          </div>
-        </div>
-        <input type="text" class="form-control" id="navbarForm" placeholder="Search here...">
-      </div>
-    </form>
-    <ul class="navbar-nav">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="flag-icon flag-icon-us mt-1" title="us"></i> <span class="font-weight-medium ml-1 mr-1">English</span>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="languageDropdown">
-          <a href="javascript:;" class="dropdown-item py-2"><i class="flag-icon flag-icon-us" title="us" id="us"></i> <span class="mr-1"> English </span></a>
-          <a href="javascript:;" class="dropdown-item py-2"><i class="flag-icon flag-icon-fr" title="fr" id="fr"></i> <span class="mr-1"> French </span></a>
-          <a href="javascript:;" class="dropdown-item py-2"><i class="flag-icon flag-icon-de" title="de" id="de"></i> <span class="mr-1"> German </span></a>
-          <a href="javascript:;" class="dropdown-item py-2"><i class="flag-icon flag-icon-pt" title="pt" id="pt"></i> <span class="mr-1"> Portuguese </span></a>
-          <a href="javascript:;" class="dropdown-item py-2"><i class="flag-icon flag-icon-es" title="es" id="es"></i> <span class="mr-1"> Spanish </span></a>
-        </div>
-      </li>
-      <li class="nav-item dropdown nav-apps">
-        <a class="nav-link dropdown-toggle" href="#" id="appsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i data-feather="grid"></i>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="appsDropdown">
-          <div class="dropdown-header d-flex align-items-center justify-content-between">
-            <p class="mb-0 font-weight-medium">Web Apps</p>
-            <a href="javascript:;" class="text-muted">Edit</a>
-          </div>
-          <div class="dropdown-body">
-            <div class="d-flex align-items-center apps">
-              <a href="{{ url('/apps/chat') }}"><i data-feather="message-square" class="icon-lg"></i><p>Chat</p></a>
-              <a href="{{ url('/apps/calendar') }}"><i data-feather="calendar" class="icon-lg"></i><p>Calendar</p></a>
-              <a href="{{ url('/email/inbox') }}"><i data-feather="mail" class="icon-lg"></i><p>Email</p></a>
-              <a href="{{ url('/general/profile') }}"><i data-feather="instagram" class="icon-lg"></i><p>Profile</p></a>
+    <div class="navbar-content">
+        <form class="search-form">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <i data-feather="search"></i>
+                    </div>
+                </div>
+                <input type="text" class="form-control" id="navbarForm" placeholder="Search here...">
             </div>
-          </div>
-          <div class="dropdown-footer d-flex align-items-center justify-content-center">
+        </form>
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    <i class="flag-icon flag-icon-us mt-1" title="us"></i> <span
+                        class="font-weight-medium ml-1 mr-1">{{ \App\Models\Language::where("short_cut",'=',get_default_lang())->first()->name ?? "English" }}</span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="languageDropdown">
+                    @foreach(\App\Models\Language::all() as $language)
+                        <a href="{{ route('set.language',$language->short_cut) }}" class="dropdown-item py-2"> <span
+                                class="mr-1"> {{ $language->name }} </span></a>
+                    @endforeach
+                    {{--                  <a href="javascript:;" class="dropdown-item py-2"> <span class="mr-1"> French </span></a>--}}
+                    {{--                  <a href="javascript:;" class="dropdown-item py-2"> <span class="mr-1"> German </span></a>--}}
+                    {{--                  <a href="javascript:;" class="dropdown-item py-2"> <span class="mr-1"> Portuguese </span></a>--}}
+                    {{--                  <a href="javascript:;" class="dropdown-item py-2"> <span class="mr-1"> Spanish </span></a>--}}
+                </div>
+            </li>
+            <li class="nav-item dropdown nav-apps">
+                <a class="nav-link dropdown-toggle" href="#" id="appsDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    <i data-feather="grid"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="appsDropdown">
+                    <div class="dropdown-header d-flex align-items-center justify-content-between">
+                        <p class="mb-0 font-weight-medium">Web Apps</p>
+                        <a href="javascript:;" class="text-muted">Edit</a>
+                    </div>
+                    <div class="dropdown-body">
+                        <div class="d-flex align-items-center apps">
+                            <a href="{{ url('/apps/chat') }}"><i data-feather="message-square" class="icon-lg"></i>
+                                <p>Chat</p></a>
+                            <a href="{{ url('/apps/calendar') }}"><i data-feather="calendar" class="icon-lg"></i>
+                                <p>Calendar</p></a>
+                            <a href="{{ url('/email/inbox') }}"><i data-feather="mail" class="icon-lg"></i>
+                                <p>Email</p></a>
+                            <a href="{{ url('/general/profile') }}"><i data-feather="instagram" class="icon-lg"></i>
+                                <p>Profile</p></a>
+                        </div>
+                    </div>
+                    <div class="dropdown-footer d-flex align-items-center justify-content-center">
             <a href="javascript:;">View all</a>
           </div>
         </div>

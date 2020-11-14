@@ -14,6 +14,11 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\HomeController;
 
+Route::redirect("/admin", "/en");
+Route::get('locale/{lang}', function ($lang) {
+    session()->put('locale', $lang);
+    return redirect()->back();
+})->name('set.language');
 Route::get('/', [HomeController::class, "index"]);
 
 Route::group(['prefix' => 'email'], function () {

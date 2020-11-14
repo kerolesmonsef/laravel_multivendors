@@ -11,5 +11,7 @@ Route::post('/login', [AdminLoginController::class, 'postLogin'])->name("post.lo
 Route::middleware('admin')->group(function () {
     Route::get('/', 'AdminController@index')->name('dashboard');
     Route::resource('language', "AdminLanguageController")->except('show');
+    Route::resource('main_category', "MainCategoryController")->except("show");
+    Route::resource('merchant', "MerchantController")->except("show");
 });
 

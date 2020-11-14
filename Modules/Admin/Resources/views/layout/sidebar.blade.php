@@ -37,59 +37,65 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ route('admin.language.create') }}" class="nav-link {{ active_class(['email/read']) }}">
-                                اضافة لغة جديدة</a>
+                            <a href="{{ route('admin.language.create') }}"
+                               class="nav-link {{ active_class_r(['admin.language.create']) }}">
+                                اضافة لغة جديدة
+                            </a>
                         </li>
                     </ul>
                 </div>
             </li>
 
-            <li class="nav-item {{ active_class(['ui-components/*']) }}">
+            <?php $main_category_active_class = active_class_r(['admin.main_category.index', 'admin.main_category.create']); ?>
+            <li class="nav-item {{ $main_category_active_class }}">
                 <a class="nav-link" data-toggle="collapse" href="#uiComponents" role="button"
-                   aria-expanded="{{ is_active_route(['ui-components/*']) }}" aria-controls="uiComponents">
+                   aria-expanded="{{ $main_category_active_class == "active" ? "true" : "" }}"
+                   aria-controls="uiComponents">
                     <i class="link-icon" data-feather="feather"></i>
                     <span class="link-title">الاقسام الرئيسية</span>
                     <span class="badge badge-danger">{{ \App\Models\MainCategory::count() }}</span>
                     <i class="link-arrow" data-feather="chevron-down"></i>
                 </a>
-                <div class="collapse {{ show_class(['ui-components/*']) }}" id="uiComponents">
+                <div class="collapse {{ $main_category_active_class == 'active' ?'show':""  }}" id="uiComponents">
                     <ul class="nav sub-menu">
 
                         <li class="nav-item">
-                            <a href="{{ url('/ui-components/tabs') }}"
-                               class="nav-link {{ active_class(['ui-components/tabs']) }}">عرض كل الاقسام</a>
+                            <a href="{{ route('admin.main_category.index') }}"
+                               class="nav-link {{ active_class_r(['admin.main_category.index']) }}">عرض كل الاقسام</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/ui-components/tooltips') }}"
-                               class="nav-link {{ active_class(['ui-components/tooltips']) }}">اضافة قسم جديد</a>
+                            <a href="{{ route('admin.main_category.create') }}"
+                               class="nav-link {{ active_class_r(['admin.main_category.create']) }}">اضافة قسم جديد</a>
                         </li>
                     </ul>
                 </div>
             </li>
-            <li class="nav-item {{ active_class(['advanced-ui/*']) }}">
-                <a class="nav-link" data-toggle="collapse" href="#advanced-ui" role="button"
-                   aria-expanded="{{ is_active_route(['advanced-ui/*']) }}" aria-controls="advanced-ui">
-                    <i class="link-icon" data-feather="anchor"></i>
-                    <span class="link-title">Advanced UI</span>
+
+            <?php $merchant_active_class = active_class_r(['admin.merchant.index', 'admin.merchant.create']); ?>
+            <li class="nav-item {{ $merchant_active_class }}">
+                <a class="nav-link" data-toggle="collapse" href="#uiComponents" role="button"
+                   aria-expanded="{{ $merchant_active_class == "active" ? "true" : "" }}"
+                   aria-controls="uiComponents">
+                    <i class="link-icon" data-feather="feather"></i>
+                    <span class="link-title">التجار</span>
+                    <span class="badge badge-danger">{{ \Modules\Merchant\Entities\Merchant::count() }}</span>
                     <i class="link-arrow" data-feather="chevron-down"></i>
                 </a>
-                <div class="collapse {{ show_class(['advanced-ui/*']) }}" id="advanced-ui">
+                <div class="collapse {{ $merchant_active_class == 'active' ?'show':""  }}" id="uiComponents">
                     <ul class="nav sub-menu">
+
                         <li class="nav-item">
-                            <a href="{{ url('/advanced-ui/cropper') }}"
-                               class="nav-link {{ active_class(['advanced-ui/cropper']) }}">Cropper</a>
+                            <a href="{{ route('admin.merchant.index') }}"
+                               class="nav-link {{ active_class_r(['admin.merchant.index']) }}">عرض كل التجار</a>
                         </li>
                         <li class="nav-item">
-                            <a href="{{ url('/advanced-ui/owl-carousel') }}"
-                               class="nav-link {{ active_class(['advanced-ui/owl-carousel']) }}">Owl Carousel</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="{{ url('/advanced-ui/sweet-alert') }}"
-                               class="nav-link {{ active_class(['advanced-ui/sweet-alert']) }}">Sweet Alert</a>
+                            <a href="{{ route('admin.merchant.create') }}"
+                               class="nav-link {{ active_class_r(['admin.merchant.create']) }}">اضافة تاجر جديد</a>
                         </li>
                     </ul>
                 </div>
             </li>
+
             <li class="nav-item {{ active_class(['forms/*']) }}">
                 <a class="nav-link" data-toggle="collapse" href="#forms" role="button"
                    aria-expanded="{{ is_active_route(['forms/*']) }}" aria-controls="forms">

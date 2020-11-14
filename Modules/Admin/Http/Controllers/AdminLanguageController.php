@@ -78,11 +78,13 @@ class AdminLanguageController extends Controller
 
     /**
      * Remove the specified resource from storage.
-     * @param int $id
-     * @return Renderable
+     * @param Language $language
+     * @return void
+     * @throws \Exception
      */
-    public function destroy($id)
+    public function destroy(Language $language)
     {
-        //
+        $language->delete();
+        return redirect()->back()->with('s_alert_success', 'Language Deleted Successfully');
     }
 }
