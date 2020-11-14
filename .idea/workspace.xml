@@ -2,51 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5655bbba-738f-45d2-ab52-a96fae419f12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Modules/Admin/Database/Seeders/MerchantTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Admin/Http/Requests/MerchantCreateUpdateRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Admin/Resources/views/Merchant/add_edit_merchant.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Admin/Resources/views/Merchant/merchants.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/MerchantFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/GeneralComponents/AccountComponents/AccountAjaxPagination.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/GeneralComponents/AccountComponents/AccountGridPaginationTable.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/GeneralComponents/Elements/a.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/GeneralComponents/Elements/a_merchant_or_client.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/GeneralComponents/Elements/campaign_type.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/GeneralComponents/Elements/delete_button.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/GeneralComponents/Elements/hover_show.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/GeneralComponents/Elements/payment_status.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/GeneralComponents/Elements/table_hover.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/GeneralComponents/GovernorateCitySelect.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/GeneralComponents/UsersComponent/UsersAjaxPagination.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/GeneralComponents/UsersComponent/UsersGridPaginationTable.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/GeneralComponents/ask_before_action.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/GeneralComponents/bootstrap_modal.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/GeneralComponents/card.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/GeneralComponents/datatables_scripts.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/GeneralComponents/draggable_bootstrap_modal.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/GeneralComponents/error_message.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/GeneralComponents/icon.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/GeneralComponents/inputLabelOnBorder.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/GeneralComponents/locationPopUpMap.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/GeneralComponents/payment_type.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/GeneralComponents/pop_up_document.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/GeneralComponents/pop_up_map.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/GeneralComponents/stars_rating.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/GeneralComponents/status_badge.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/GeneralComponents/user_type.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Http/Controllers/MainCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Http/Controllers/MainCategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Http/Controllers/MerchantController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Http/Controllers/MerchantController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Resources/views/Language/add_edit_language.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Resources/views/Language/add_edit_language.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Resources/views/MainCategory/add_main_category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Resources/views/MainCategory/add_main_category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Resources/views/MainCategory/edit_main_category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Resources/views/MainCategory/edit_main_category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Resources/views/layout/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Resources/views/layout/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Resources/views/layout/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Resources/views/layout/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Merchant/Entities/Merchant.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Merchant/Entities/Merchant.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_14_095256_add_fields_to_merchants_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_14_095256_add_fields_to_merchants_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +181,7 @@
       <workItem from="1604959139844" duration="24304000" />
       <workItem from="1605124837553" duration="5377000" />
       <workItem from="1605217781954" duration="20829000" />
-      <workItem from="1605302417361" duration="23858000" />
+      <workItem from="1605302417361" duration="24319000" />
     </task>
     <servers />
   </component>
@@ -276,9 +232,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="120" width="709" height="546" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1605375404736" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1605374161050">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1605375456664">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1605374161050" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1605375456664" />
   </component>
 </project>
