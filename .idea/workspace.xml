@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5655bbba-738f-45d2-ab52-a96fae419f12" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/database/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,18 +139,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/config" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\projects\laravel_multivendors" />
       <recent name="E:\projects\laravel_multivendors\config" />
       <recent name="E:\projects\laravel_multivendors\app" />
       <recent name="E:\projects\laravel_multivendors\resources\views" />
       <recent name="E:\projects\laravel_multivendors\Modules\Admin\Resources\views" />
-      <recent name="E:\projects\laravel_multivendors\public\images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\projects\laravel_multivendors\app\Payments\Types" />
@@ -189,7 +190,7 @@
       <workItem from="1605547800658" duration="25000" />
       <workItem from="1605652122570" duration="1951000" />
       <workItem from="1605704826978" duration="8632000" />
-      <workItem from="1605870549523" duration="46703000" />
+      <workItem from="1605870549523" duration="47252000" />
     </task>
     <servers />
   </component>
@@ -240,9 +241,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="120" width="709" height="546" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1606003141997" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1606004413398">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1606005347304">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1606004413398" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1606005347304" />
   </component>
 </project>
