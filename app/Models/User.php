@@ -11,6 +11,7 @@ use Modules\Merchant\Entities\Merchant;
 /**
  * @property string profile_type
  * @property string password
+ * @property mixed name
  */
 class User extends Authenticatable
 {

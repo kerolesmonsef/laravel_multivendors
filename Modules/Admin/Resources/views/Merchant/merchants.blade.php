@@ -61,7 +61,7 @@
                                                 <tr>
                                                     <td>{{ $merchant->user->name }}</td>
                                                     <td><img style="width: 150px; height: 100px;"
-                                                             src="{{asset($merchant->logo)}}"></td>
+                                                             src="{{show_image($merchant->logo)}}"></td>
 
                                                     <td>{{ $merchant->user->mobile }}</td>
                                                     <td> {{$merchant->category->languages->first()->pivot->content ?? ""}}</td>

@@ -72,3 +72,18 @@ function uploadVideo($folder, $video)
     $path = 'video/' . $folder . '/' . $filename;
     return $path;
 }
+
+
+function show_image(string $image = null)
+{
+    if (str_contains($image ?? "", "http"))
+        return $image;
+    else {
+        return asset($image);
+    }
+}
+
+function random_image_url(int $w = 200, int $h = 200)
+{
+    return "https://picsum.photos/$w/$h?random=" . rand();
+}

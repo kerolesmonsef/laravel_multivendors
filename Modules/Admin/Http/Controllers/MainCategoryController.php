@@ -19,9 +19,7 @@ class MainCategoryController extends Controller
     public function index()
     {
 //        DB::enableQueryLog();
-        $categories = MainCategory::query()->with(['languages' => function ($query) {
-            $query->where("languages.short_cut", '=', get_default_lang());
-        }])
+        $categories = MainCategory::CurrentLanguageMainCategory()
             ->paginate(10);
 //        dd($categories);
 

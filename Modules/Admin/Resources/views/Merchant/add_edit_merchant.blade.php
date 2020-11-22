@@ -237,7 +237,39 @@ if ($merchant->exists) {
                                                         <i class="la la-check-square-o"></i> {{ $form_submit }}
                                                     </button>
                                                 </div>
+                                            </div>
                                         </form>
+
+                                        @if($merchant->exists)
+                                            <h3 class="text-center">Payments This Merchant Support</h3>
+                                            <table class="table">
+                                                <thead>
+                                                <tr>
+                                                    <th><i class="fas fa-pen"></i> Name</th>
+                                                    <th><i class="fas fa-envelope-open"></i> Email</th>
+                                                    <th><i class="fas fa-random"></i> Action</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                @foreach($merchant->payment_types as $payment)
+                                                    <tr>
+                                                       <td>{{ $payment->name }}</td>
+                                                       <td>{{ $payment->pivot->payment_email }}</td>
+                                                        <td>
+                                                            <a href="{{ route('admin.merchant_payment_type.edit',$payment->pivot->id) }}" class="btn btn-info"><i class="far fa-edit"></i> Edit</a>
+                                                            <form action="{{ route('admin.merchant_payment_type.destroy',$payment->pivot->id) }}" method="post" class="d-inline">
+                                                                @csrf
+                                                                @method("delete")
+                                                                <button type="submit" class="btn btn-danger"><i class="fas fa-trash"></i> Delete</button>
+                                                            </form>
+                                                        </td>
+                                                    </tr>
+                                                @endforeach
+                                                </tbody>
+                                            </table>
+                                            <a class="btn btn-success" href="{{ route('admin.merchant_payment_type.create',$merchant->id) }}"><i class="fas fa-plus"></i> Add New Payment</a>
+                                        @endif
+
                                     </div>
                                 </div>
                             </div>

@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Traits\ActiveColumnScope;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -20,5 +21,14 @@ class MainCategory extends Model
             ->withPivot('content');
     }
 
+    /**
+     * @return Builder
+     */
+    public static function CurrentLanguageMainCategory()
+    {
+        return self::query()->with(['languages' => function ($query) {
+            $query->where("languages.short_cut", '=', get_default_lang());
+        }]);
+    }
 
 }

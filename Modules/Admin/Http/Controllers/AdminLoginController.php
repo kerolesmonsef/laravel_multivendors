@@ -20,6 +20,7 @@ class AdminLoginController extends Controller
             'email' => "bail|required|string|email|exists:users,email",
             'password' => "required|string|min:6"
         ]);
+
         $credentials = request()->only(['email', 'password']);
 
         if (auth()->attempt($credentials)) {

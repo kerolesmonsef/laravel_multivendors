@@ -7,7 +7,9 @@ use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Notification;
 use Modules\Admin\Http\Requests\MerchantCreateUpdateRequest;
+use Modules\Admin\Notifications\MerchantCreated;
 use Modules\Merchant\Entities\Merchant;
 
 class MerchantController extends Controller
@@ -65,6 +67,9 @@ class MerchantController extends Controller
         ];
         $user = new User($create_user);
         $merchant->user()->save($user);
+
+        Notification::send($user,new MerchantCreated($user));
+
         return redirect()->back()->with('s_alert_success', 'Merchant Created Successfully');
     }
 
@@ -116,11 +121,16 @@ class MerchantController extends Controller
 
     /**
      * Remove the specified resource from storage.
-     * @param int $id
-     * @return Renderable
+     * @param Merchant $merchant
+     * @return void
+     * @throws \Exception
      */
-    public function destroy($id)
+    public function destroy(Merchant $merchant)
     {
-        //
+        $merchant->user()->delete();
+        $merchant->delete();
+        return redirect()
+            ->route('admin.merchant.index')
+            ->with('s_alert_success', 'Merchant Deleted Successfully');
     }
 }

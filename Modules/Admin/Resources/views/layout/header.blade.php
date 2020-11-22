@@ -17,7 +17,8 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-toggle="dropdown"
                    aria-haspopup="true" aria-expanded="false">
-                    <i class="flag-icon flag-icon-us mt-1" title="us"></i> <span
+                    <i class="flag-icon flag-icon-us mt-1" title="us"></i>
+                    <span
                         class="font-weight-medium ml-1 mr-1">{{ \App\Models\Language::where("short_cut",'=',get_default_lang())->first()->name ?? "English" }}</span>
                 </a>
                 <div class="dropdown-menu" aria-labelledby="languageDropdown">

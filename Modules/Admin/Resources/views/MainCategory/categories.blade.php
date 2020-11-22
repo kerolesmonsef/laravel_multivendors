@@ -64,7 +64,7 @@
                                                         <td>{{get_default_lang()}}</td>
                                                         <td>{{$category->active}}</td>
                                                         <td><img style="width: 150px; height: 100px;border-radius: 0"
-                                                                 src="{{asset($category->photo)}}"></td>
+                                                                 src="{{show_image($category->photo)}}"></td>
                                                         <td>
                                                             <div class="btn-group" role="group"
                                                                  aria-label="Basic example">

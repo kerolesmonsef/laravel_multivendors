@@ -2,6 +2,7 @@
 
 namespace Modules\Customer\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -14,7 +15,17 @@ class CustomerController extends Controller
      */
     public function index()
     {
-        return view('customer::index');
+        $first_random_18_product = Product::query()->with("merchant.user")->limit(18)->inRandomOrder()->get();
+        $second_random_6_product = Product::query()->with("merchant.user")->limit(6)->inRandomOrder()->get();
+        $third_random_6_product = Product::query()->with("merchant.user")->limit(6)->inRandomOrder()->get();
+        $forth_random_12_product = Product::query()->with("merchant.user")->limit(12)->inRandomOrder()->get();
+//        dd($first_random_18_product->first()->details);
+        return view('customer::index', [
+            'first_random_18_product' => $first_random_18_product,
+            'second_random_6_product' => $second_random_6_product,
+            'third_random_6_product' => $third_random_6_product,
+            'forth_random_12_product' => $forth_random_12_product,
+        ]);
     }
 
     /**
