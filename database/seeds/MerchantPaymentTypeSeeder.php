@@ -22,7 +22,7 @@ class MerchantPaymentTypeSeeder extends Seeder
                 'payment_type_id' => '1',
             ];
         }
-        $big = new \App\MYMODEL\Helpers\SeedBigData($save, 100, 'merchant_payment_types');
+        $big = new \App\MYMODEL\Helpers\SeedBigData($save, 20, 'merchant_payment_types');
         $big->run();
     }
 }

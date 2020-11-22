@@ -15,6 +15,12 @@ class CreateMerchantsTable extends Migration
     {
         Schema::create('merchants', function (Blueprint $table) {
             $table->id();
+            $table->string("address", 500);
+            $table->float("latitude")->nullable()->default(null);
+            $table->float("longitude")->nullable()->default(null);
+            $table->unsignedBigInteger("category_id");
+            $table->string("logo", 255)->nullable()->default(null);
+            $table->timestamps();
         });
     }
 

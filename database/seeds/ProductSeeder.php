@@ -17,7 +17,7 @@ class ProductSeeder extends Seeder
         $save = [];
         $merchants = Merchant::all();
         $faker = Factory::create('ar_JO');
-        for ($i = 0; $i < 1000; $i++) {
+        for ($i = 0; $i < 300; $i++) {
             $save[] = [
                 'merchant_id' => $merchants->random()->id,
                 'name' => $faker->unique()->name,
@@ -31,7 +31,7 @@ class ProductSeeder extends Seeder
                 'updated_at' => now(),
             ];
         }
-        $big = new SeedBigData($save,200,"products");
+        $big = new SeedBigData($save,20,"products");
         $big->run();
     }
 }

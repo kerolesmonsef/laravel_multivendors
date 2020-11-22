@@ -2,97 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5655bbba-738f-45d2-ab52-a96fae419f12" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Modules/Admin/Http/Controllers/MerchantPaymentController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Admin/Http/Requests/AdminMerchantPaymentTypeRequest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Admin/Notifications/MerchantCreated.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Admin/Resources/views/Merchant/PaymentType/add_edit_merchant_payment_types.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Admin/vendor/autoload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Admin/vendor/composer/ClassLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Admin/vendor/composer/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Admin/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Admin/vendor/composer/autoload_namespaces.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Admin/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Admin/vendor/composer/autoload_real.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Admin/vendor/composer/autoload_static.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Customer/Http/Controllers/CustomerPaymentRedirectsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Customer/Http/Controllers/CustomerProductController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Customer/Resources/views/Product/product.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Customer/vendor/autoload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Customer/vendor/composer/ClassLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Customer/vendor/composer/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Customer/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Customer/vendor/composer/autoload_namespaces.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Customer/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Customer/vendor/composer/autoload_real.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Customer/vendor/composer/autoload_static.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Merchant/vendor/autoload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Merchant/vendor/composer/ClassLoader.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Merchant/vendor/composer/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Merchant/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Merchant/vendor/composer/autoload_namespaces.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Merchant/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Merchant/vendor/composer/autoload_real.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Modules/Merchant/vendor/composer/autoload_static.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/MYMODEL/Helpers/Myhelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/MYMODEL/Helpers/SeedBigData.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/MYMODEL/QueryFiltersClasses/Filter.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/MYMODEL/QueryFiltersClasses/Where.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/MYMODEL/QueryFiltersClasses/WhereDate.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/MYMODEL/QueryFiltersClasses/WhereDateBetween.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/MYMODEL/QueryFiltersClasses/WhereLike.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/MerchantPaymentType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Models/PaymentType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Payments/IPayment.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Payments/Types/Paypal.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Payments/Types/Stripe.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Payments/Types/Weaccept.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/paypal.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_123504_create_payment_types_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_11_20_123549_create_merchant_payment_types_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/LanguageSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/MainCategorySeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/MerchantPaymentTypeSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/MerchantTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/PaymentTypeSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Laravel MultiVendor.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Laravel MultiVendor.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/hp_3_3_2020.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/hp_3_3_2020.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Http/Controllers/AdminLoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Http/Controllers/AdminLoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Http/Controllers/MainCategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Http/Controllers/MainCategoryController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Http/Controllers/MerchantController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Http/Controllers/MerchantController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Resources/views/MainCategory/categories.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Resources/views/MainCategory/categories.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Resources/views/MainCategory/edit_main_category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Resources/views/MainCategory/edit_main_category.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Resources/views/Merchant/add_edit_merchant.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Resources/views/Merchant/add_edit_merchant.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Resources/views/Merchant/merchants.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Resources/views/Merchant/merchants.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Resources/views/layout/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Resources/views/layout/header.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Resources/views/layout/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Resources/views/layout/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Admin/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Admin/Routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Customer/Http/Controllers/CustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Customer/Http/Controllers/CustomerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Customer/Resources/views/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Customer/Resources/views/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Customer/Resources/views/layouts/includes/header-bottom.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Customer/Resources/views/layouts/includes/header-bottom.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Customer/Resources/views/layouts/includes/header-center.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Customer/Resources/views/layouts/includes/header-center.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Customer/Resources/views/layouts/includes/header-top.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Customer/Resources/views/layouts/includes/header-top.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Customer/Resources/views/layouts/master.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Customer/Resources/views/layouts/master.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Customer/Routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Customer/Routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Merchant/Entities/Merchant.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Merchant/Entities/Merchant.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LanguageableController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TranslationController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/MainCategory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/MainCategory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/LanguageableFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/ProductFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/ProductFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/TranslationFactory.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_12_224640_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_11_12_224640_create_products_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/LanguageableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/LanguageableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modules/Merchant/Database/Migrations/2020_11_07_121539_create_merchants_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Merchant/Database/Migrations/2020_11_07_121539_create_merchants_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_14_095256_add_fields_to_merchants_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/MerchantPaymentTypeSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/MerchantPaymentTypeSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/MerchantTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/MerchantTableSeeder.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/ProductSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ProductSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/TranslationSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/AdminSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,7 +194,7 @@
       <workItem from="1605547800658" duration="25000" />
       <workItem from="1605652122570" duration="1951000" />
       <workItem from="1605704826978" duration="8632000" />
-      <workItem from="1605870549523" duration="45697000" />
+      <workItem from="1605870549523" duration="46506000" />
     </task>
     <servers />
   </component>
@@ -314,10 +229,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="352" y="198" key="NewPhpClassDialog/0.0.1366.728@0.0.1366.728" timestamp="1605001522504" />
-    <state x="518" y="295" key="NewPhpFileDialog" timestamp="1605994037190">
+    <state x="518" y="295" key="NewPhpFileDialog" timestamp="1606004256723">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="518" y="295" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1605994037190" />
+    <state x="518" y="295" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1606004256723" />
     <state x="186" y="9" key="SettingsEditor" timestamp="1605350280222">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -330,9 +245,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="390" y="120" width="709" height="546" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1606003141997" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1606004028796">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1606004413398">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1606004028796" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1606004413398" />
   </component>
 </project>

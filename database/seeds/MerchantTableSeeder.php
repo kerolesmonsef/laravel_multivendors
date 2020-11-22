@@ -17,7 +17,7 @@ class MerchantTableSeeder extends Seeder
     {
         $faker = Factory::create('ar_JO');
         $MainCategory = MainCategory::all();
-        for ($i = 0; $i < 20; $i++) {
+        for ($i = 0; $i < 10; $i++) {
             $save = [
                 'address' => $faker->address,
                 'latitude' => $faker->latitude,
