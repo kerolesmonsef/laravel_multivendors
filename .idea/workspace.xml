@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5655bbba-738f-45d2-ab52-a96fae419f12" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Modules/Merchant/Database/Migrations/2020_11_07_121539_create_merchants_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/Modules/Merchant/Database/Migrations/2020_11_07_121539_create_merchants_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_11_14_095256_add_fields_to_merchants_table.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/MerchantPaymentTypeSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/MerchantPaymentTypeSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/MerchantTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/MerchantTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/ProductSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/ProductSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +189,7 @@
       <workItem from="1605547800658" duration="25000" />
       <workItem from="1605652122570" duration="1951000" />
       <workItem from="1605704826978" duration="8632000" />
-      <workItem from="1605870549523" duration="46506000" />
+      <workItem from="1605870549523" duration="46703000" />
     </task>
     <servers />
   </component>
